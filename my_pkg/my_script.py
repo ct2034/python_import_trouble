@@ -1,4 +1,5 @@
-import my_dep
+if __name__ != '__main__':
+    from . import my_dep
 
 
 def bar():
@@ -6,4 +7,5 @@ def bar():
 
 
 if __name__ == '__main__':
+    import my_dep
     print(bar())
